@@ -4,11 +4,11 @@ languages:
 products:
 - windows-wpf
 page_type: sample
-name: "Simple Layout Sample"        
-description: "This sample shows how to use a StackPanel element to arrange three Button in a vertical stack."
+name: "Spell Checking Custom Dictionaries Sample"
+description: "This sample demonstrates the use of Custom Dictionaries with Spell Checking."
 ---
-# Simple Layout Sample
-This sample shows how to use a StackPanel element to arrange three Button in a vertical stack.
+# Spell Checking Custom Dictionaries Sample
+This sample demonstrates the use of Custom Dictionaries with Spell Checking.
 
 ## Build the sample
 The easiest way to use these samples without using Git is to download the zip file containing the current version (using the link below or by clicking the "Download ZIP" button on the repo page). You can then unzip the entire archive and use the samples in [Visual Studio 2019](https://www.visualstudio.com/wpf-vs).

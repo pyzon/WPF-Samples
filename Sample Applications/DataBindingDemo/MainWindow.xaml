@@ -52,8 +52,9 @@
         </CheckBox>
 
 
-        <ListBox Name="Master" AutomationProperties.Name="Master" Grid.Row="2" Grid.ColumnSpan="3" Margin="8"
-                 ItemsSource="{Binding Source={StaticResource ListingDataView}}">
+        <ListBox Name="Master" AutomationProperties.Name="List of Items For Sale" Grid.Row="2" Grid.ColumnSpan="3" Margin="8"
+                 ItemsSource="{Binding Source={StaticResource ListingDataView}}"
+                 AutomationProperties.LiveSetting="Assertive">
             <ListBox.GroupStyle>
                 <GroupStyle
                     HeaderTemplate="{StaticResource GroupingHeaderTemplate}" />
@@ -64,9 +65,10 @@
         <ContentControl Name="Detail" Grid.Row="3" Grid.ColumnSpan="3"
                         Content="{Binding Source={StaticResource ListingDataView}}"
                         ContentTemplate="{StaticResource DetailsProductListingTemplate}"
-                        Margin="9,0,0,0" />
+                        Margin="9,0,0,0" IsTabStop="False"/>
         <Button Name="OpenAddProduct" Grid.Row="4" Grid.Column="1" Content="Add Product" HorizontalAlignment="Center"
                 Margin="8"
                 Click="OpenAddProductWindow" />
+        
     </Grid>
 </Window>
